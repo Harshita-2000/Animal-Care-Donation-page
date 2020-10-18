@@ -1,0 +1,145 @@
+<html>
+<head>
+  <title>Animal Care</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+      /* Start client-defined Callback Handler Functions */
+      function onOpenHandler () {
+        alert('Payments Modal is Opened');
+      }
+
+      function onCloseHandler () {
+        alert('Payments Modal is Closed');
+      }
+
+      function onPaymentSuccessHandler (response) {
+        alert('Payment Success');
+        console.log('Payment Success Response', response);
+      }
+
+      function onPaymentFailureHandler (response) {
+        alert('Payment Failure');
+        console.log('Payment Failure Response', response);
+      }
+      /* End client-defined Callback Handler Functions */
+
+      /* Configuring Handlers */
+      Instamojo.configure({
+        handlers: {
+          onOpen: onOpenHandler,
+          onClose: onCloseHandler,
+          onSuccess: onPaymentSuccessHandler,
+          onFailure: onPaymentFailureHandler
+        }
+      });
+      
+      function onButtonClick() {
+        Instamojo.open('http://www.instamojo.com/@harshigarg2000');
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header Menu -->
+    <header>
+      <!-- Just an image -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://i.pinimg.com/564x/18/1f/db/181fdb65e07d340c32743649f1746789.jpg" width="75" height="75" alt="" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="navbar-brand" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="navbar-brand" href="disease.html">Animal Diseases</a>
+          </li>
+          <li class="nav-item ">
+            <a class="navbar-brand" href="AnimalStore.html">Animal Cart</a>
+          </li>
+          <li class="nav-item ">
+            <a class="navbar-brand" href="donatepage.html">Donate</a>
+          </li>
+        </ul>
+        </div>
+        </span>
+      </nav>
+
+      <section id="header" class="text-center" style="background-image: url('assets/img/animalfrontimage.jpg');  background-size: cover;">
+      </section>
+      <h2 class="font-weight-bold mb-2">Causes you are donating for...</h2>
+    <p class="font-italic  mb-4" style="color: black;">We provide the best quality products for your pet, including health treatments to the stray animals. </p>
+    
+          <div class="row pb-5 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 mt-4">
+            <div class="card rounded shadow-sm border-0">
+            <div class="card-body p-4" style="background-color:#F4FBFF;" >
+              <div class="disease-text">
+                          <h1>Contact Us</h1>
+                          <form>
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea  cols="52" rows="10" placeholder="Message"></textarea>
+                            <div class="btn-box">
+                                <button class="common-button">Send</button>  
+                            </div>
+                        </form>
+                      </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-lg-8 col-md-6 mb-4 mb-lg-0 mt-4">
+            <div class="card rounded shadow-sm border-0">
+            <div class="card-body p-4" style="background-color:#F4FBFF; padding-top: 50px !important; padding-bottom: 50px !important;" >
+               <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 mt-3">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="assets/img/healthanimal.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h5> <a href="#" class="text-dold"></a></h5>
+                    <p class="small text-black font-italic">We provide best health care facilites to the animals and stray dogs.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <!-- Card -->
+        <div class="card rounded shadow-sm border-0 mt-3">
+                <div class="card-body p-4"><img src="assets/img/foodanimal.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h5> <a href="#" class="text-dold"></a></h5>
+                    <p class="small text-black font-italic">We provide food and shelter facilites to the animals and stray dogs.</p>
+                </div>
+            </div>
+        </div>
+       <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <!-- Card -->
+        <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="assets/img/playinganimal.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h5> <a href="#" class="text-dold"></a></h5>
+                    <p class="small text-black font-italic">We keep a friendly relationship with the animals and stray dogs.</p>
+                </div>
+            </div>
+          </div>
+            </div>
+            </div>
+            </div>
+          </div>
+          </div>
+
+   <a href="https://test.instamojo.com/@harshigarg2000/" rel="im-checkout" data-text="Donate" data-css-style="color:#ffffff; background:#006b76; width:180px; border-radius:30px" data-layout="vertical"></a>
+<script src="https://js.instamojo.com/v1/button.js"></script>
+  </body>
+</html>
